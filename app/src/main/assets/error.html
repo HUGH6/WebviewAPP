@@ -1,0 +1,87 @@
+<!-- 本地测试页面 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+    <div id="main-box">
+        <div>
+            <img src="./network_error.png" alt="">
+        </div>
+        <div>
+            <span>Network not connected.</span>
+        </div>
+        <div id="btnDiv">
+            <div id="refreshBtn">Refresh</div>
+        </div>
+    </div>
+
+<script>
+    document.getElementById('refreshBtn').addEventListener('click', function(){
+        window.location.replace("https://www.ifreenow.com");
+    });
+
+</script>
+
+<style>
+    #main-box {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+    }
+
+    div {
+        text-align: center;
+        width: 100%;
+    }
+
+    span {
+        font-size: 2em;
+    }
+
+    img {
+        margin-top: 10%;
+        display: inline-block;
+        width: 45%;
+
+    }
+
+    #btnDiv {
+        position: relative;
+
+    }
+
+    #refreshBtn {
+        position:absolute;
+        display: inline-block;
+        width: auto; 
+        height: 2.5em;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        margin:auto;
+        text-align: center;
+        margin-top: 50px;
+        border: 1px solid rgb(163, 163, 163);
+        line-height: 2.5em;
+        font-size: 2.5em;
+        font-weight: 600;
+        min-width: 20px;
+        max-width: 200px;
+    }
+
+    #refreshBtn:hover {
+        background-color:  rgb(203, 203, 203);
+    }
+    
+</style>
+</body>
+
+</html>
